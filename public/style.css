@@ -1,0 +1,55 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    /* for ios: */
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  
+  /* Global styles can go here */
+  
+  /* Mobile Devices (Portrait) */
+  @media only screen and (max-width: 480px) {
+      /* Mobile portrait styles */
+    }
+    
+    /* Mobile Devices (Landscape) */
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      /* Mobile landscape styles */
+    }
+    
+    /* Tablets (Portrait) */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      /* Tablet portrait styles */
+    }
+    
+    /* Tablets (Landscape) */
+    @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+      /* Tablet landscape styles */
+    }
+    
+    /* Laptops and Small Desktops */
+    @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+      /* Laptop and small desktop styles */
+    }
+    
+    /* Large Desktops */
+    @media only screen and (min-width: 1601px) {
+      /* Large desktop styles */
+    }
+    
+    /* Retina Displays */
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+           only screen and (min--moz-device-pixel-ratio: 2), 
+           only screen and (-o-min-device-pixel-ratio: 2/1), 
+           only screen and (min-device-pixel-ratio: 2), 
+           only screen and (min-resolution: 192dpi), 
+           only screen and (min-resolution: 2dppx) {
+      /* Retina display styles */
+    }
+    
+    /* Ultra-Wide Screens */
+    @media only screen and (min-width: 1921px) {
+      /* Ultra-wide screen styles */
+    }
+    
