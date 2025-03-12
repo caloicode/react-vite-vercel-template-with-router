@@ -18,18 +18,20 @@ This repository contains a customized React template optimized for fast setup wi
 - public/
     - assets/
     - fonts/
-    - `style.css`
 - src/
     - components/
     - pages/
     - `App.jsx`
     - `main.jsx`
+    - `style.css`
 - `index.html`
 
 
 **Notes:**  
-*The style.css file is linked in the index.html file:*  
-` <link rel="stylesheet" href="/style.css"> `  
+*The style.css file must be linked to the index.html file:*  
+`<link rel="stylesheet" href="src/style.css">`  
+
+Include `import './style.css'` in the `main.jsx`
 
 When referencing assets from components, use relative paths:  
 `<img src="../assets/image.jpg"/> `
@@ -91,3 +93,13 @@ Create a `vercel.json` file in the project root with the following content to ma
 This configuration ensures that all routing will be handled by the React app, preventing issues with browser navigation after deployment.
 ### Tailwind CSS Installation ###
 Follow the steps provided here: [TailwindCSS-Vite Setup](https://tailwindcss.com/docs/installation/using-vite).
+#### Defining a Custom Class ###
+```css
+@import "tailwindcss";
+
+@layer components {
+ .centered-container {
+  @apply flex justify-center items-center w-screen h-screen bg-pink-500;
+ }
+}
+```
