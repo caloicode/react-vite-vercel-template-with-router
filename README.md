@@ -89,3 +89,5 @@ Create a `vercel.json` file in the project root with the following content to ma
 }
 ```
 This configuration ensures that all routing will be handled by the React app, preventing issues with browser navigation after deployment.
+### Tailwind CSS Installation ###
+Follow the steps provided here: [TailwindCSS-Vite Setup](https://tailwindcss.com/docs/installation/using-vite).
