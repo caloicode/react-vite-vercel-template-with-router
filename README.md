@@ -23,18 +23,30 @@ This repository contains a customized React template optimized for fast setup wi
     - pages/
     - `App.jsx`
     - `main.jsx`
-    - `style.css`
+    - `App.css`
 - `index.html`
 
 
 **Notes:**  
 *The style.css file must be linked to the index.html file:*  
-`<link rel="stylesheet" href="src/style.css">`  
+```jsx
+<link rel="stylesheet" href="src/style.css">
+```  
 
-Include `import './style.css'` in the `main.jsx`
+Include in the `main.jsx`:
+```jsx
+`import './App.css'`
+```
 
 When referencing assets from components, use relative paths:  
-`<img src="../assets/image.jpg"/> `
+```jsx
+<img src="../assets/image.jpg"/>
+```
+
+When referencing from the public folder,  you can use an absolute path starting with `/`
+```jsx
+<img src="/image.jpg">
+```
 
 ### Adding a React Router ###
 Installation:
@@ -102,4 +114,8 @@ Follow the steps provided here: [TailwindCSS-Vite Setup](https://tailwindcss.com
   @apply flex justify-center items-center w-screen h-screen bg-pink-500;
  }
 }
+```
+If you have dark mode implemented, make sure to add this code below `@import "tailwindcss";`: 
+```css
+@custom-variant dark (&:where(.dark, .dark *));
 ```
