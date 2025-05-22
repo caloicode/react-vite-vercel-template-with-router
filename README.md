@@ -10,6 +10,7 @@ This repository contains a customized React template optimized for fast setup wi
 
 ```bash
  npm create vite@latest filename --template react
+ cd filename
  npm i
 ```
 
